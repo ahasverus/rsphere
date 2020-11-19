@@ -31,6 +31,15 @@ You can install the development version from [GitHub](https://github.com/ahasver
 # install.packages("remotes")
 remotes::install_github("ahasverus/rsphere")
 ```
-## Example
 
-To be done!
+## Usage
+
+```{r}
+plot(x = 0, y = 0, asp = 1, xlim = c(-1, 1), ylim = c(-1, 1), axes = FALSE, ann = FALSE)
+rsphere::add_sphere()
+```
+
+```{r}
+plot(x = 0, y = 0, asp = 1, xlim = c(-1, 1), ylim = c(-1, 1), axes = FALSE, ann = FALSE)
+rsphere::add_sphere(x1 = 0.5, y1 = -0.5, col = c("black", "red"))
+```

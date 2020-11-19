@@ -19,5 +19,4 @@ RoxygenNote: 7.1.1
 Imports:
     grDevices,
     magrittr,
-    rlang,
     sf

@@ -25,6 +25,18 @@ You can install the development version from
 remotes::install_github("ahasverus/rsphere")
 ```
 
-## Example
+## Usage
 
-To be done!
+``` r
+plot(x = 0, y = 0, asp = 1, xlim = c(-1, 1), ylim = c(-1, 1), axes = FALSE, ann = FALSE)
+rsphere::add_sphere()
+```
+
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+
+``` r
+plot(x = 0, y = 0, asp = 1, xlim = c(-1, 1), ylim = c(-1, 1), axes = FALSE, ann = FALSE)
+rsphere::add_sphere(x1 = 0.5, y1 = -0.5, col = c("black", "red"))
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />

@@ -17,7 +17,6 @@
 #' @export
 #' @importFrom grDevices colorRampPalette
 #' @importFrom magrittr %>%
-#' @importFrom rlang .data
 #' @importFrom sf st_polygon st_sfc st_sf st_intersection st_area st_geometry
 #'
 #' @examples
@@ -37,15 +36,17 @@ add_sphere <- function(x0 = 0, y0 = 0, r0 = 1, x1 = -0.5, y1 = 0.5, r1 = 0.1,
 
   rays <- seq(r0 * 2, r1, -1 * h)
 
-  shades <- lapply(rays, polar_coords, x = x1, y = y1, n = n) %>%
-    lapply(.data, function(x) sf::st_polygon(list(x))) %>%
+  shades <- lapply(rays, polar_coords, x = x1, y = y1, n = n)
+  shades <- lapply(shades, function(x) sf::st_polygon(list(x))) %>%
     sf::st_sfc() %>%
-    sf::st_sf() %>%
-    sf::st_intersection(.data, mask)
+    sf::st_sf()
+
+  shades <- sf::st_intersection(shades, mask)
 
   outside <- shades %>%
-    sf::st_area() %>%
-    round(.data, 5) %>%
+    sf::st_area()
+
+  outside <- round(outside, 5) %>%
     duplicated()
 
   shades <- shades[!outside, ]
