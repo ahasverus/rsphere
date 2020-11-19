@@ -8,8 +8,10 @@ Authors@R:
         role   = c("aut", "cre"),
         email  = "nicolas.casajus@gmail.com")
 Description: This package adds a two-dimensional sphere with a shading effect.
-    User can plays with the color, the radius, and the light direction.
+    User can play with the color, the radius, and the light direction.
 License: MIT + file LICENSE
+URL: https://github.com/ahasverus/rsphere
+BugReports: https://github.com/ahasverus/rsphere/issues
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
@@ -19,5 +21,3 @@ Imports:
     magrittr,
     rlang,
     sf
-URL: https://github.com/ahasverus/rsphere
-BugReports: https://github.com/ahasverus/rsphere/issues

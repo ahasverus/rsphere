@@ -1,1 +1,4 @@
 ^LICENSE\.md$
+^\.github$
+^README\.Rmd$
+^README\.html$
