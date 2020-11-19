@@ -7,6 +7,9 @@
 
 [![R build
 status](https://github.com/ahasverus/rsphere/workflows/R-CMD-check/badge.svg)](https://github.com/ahasverus/rsphere/actions)
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 The goal of rsphere is to plot a 2D shaded sphere with a two-colours
