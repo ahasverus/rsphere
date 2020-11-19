@@ -1,0 +1,21 @@
+Package: rsphere
+Title: Plot a 2D Shaded Sphere
+Version: 0.0.1
+Authors@R:
+    person(
+        given  = "Nicolas",
+        family = "Casajus",
+        role   = c("aut", "cre"),
+        email  = "nicolas.casajus@gmail.com")
+Description: This package adds a two-dimensional sphere with a shading effect.
+    User can plays with the color, the radius, and the light direction.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports:
+    grDevices,
+    magrittr,
+    rlang,
+    sf
