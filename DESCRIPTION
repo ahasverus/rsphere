@@ -19,3 +19,5 @@ Imports:
     magrittr,
     rlang,
     sf
+URL: https://github.com/ahasverus/rsphere
+BugReports: https://github.com/ahasverus/rsphere/issues
